@@ -1,0 +1,28 @@
+<html> 
+  <head> 
+    <title>Barcode Reader</title> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="jquery-1.11.3.js" type="text/javascript"></script> 
+    <script src="quagga.js" type="text/javascript"></script> 
+    <script src="BarcodeReader.js" type="text/javascript"></script>
+	
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+	<script>
+         function openReader(){
+            window.open("./BarcodeReader.html");
+         }
+    </script>	
+  </head> 
+  <body style="text-align: center;"> 
+	<input type="text" id="barcode-text">
+      <button type="button" onclick="openReader()">Scan barcode</button>
+	  
+    <div id="result_strip"> 
+      <ul class="thumbnails"></ul> 
+      <ul class="collector"></ul> 
+    </div> 
+    <div id="interactive" class="viewport"></div> 
+  </body> 
+</html>
